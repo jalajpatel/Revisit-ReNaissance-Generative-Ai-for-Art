@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --navcolor: #7743DB;
+    --cardcolor: #c3acd0;
+    --footercolor: #f7efe5;
+    --homebackcolor: #fffbf5;
+    --infobackcolor: #e7dcfa;
+    --gold: #ffd700;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--homebackcolor);
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+nav{
+    background-color: var(--navcolor);
+    display: flex;
+    justify-content: space-between;
+    min-height: 12vh;
+    padding: 1.2rem 2rem;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    display:flex;
+    background-color: var(--footercolor);
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+}
+
+footer > *{
+    margin: 1rem;
+}
+
+.quicknav-aides > ul{
+    padding: 1.2rem 2.2rem;
+    list-style-type: none;
+}
+
+Link{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.quicknav-aides > ul > li {
+    padding: .5rem;
+    padding-bottom: 10rem;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 2rem;
+}
+
+.homebody{
+    background-color: var(--homebackcolor);
+    padding: 2rem 5rem;
+    min-height: 60vh;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--cardcolor);
+    border-radius: 0.5rem;
+    height: 35vh;
+    width: 30vw;
+    margin: 3rem;
+    padding: 1.5rem;
+    color:white;
+}
+
+.styleremover{
+    text-decoration: none;
+    color: black;
+}
+
+.imagebody{
+    text-align: center;
+}
+
+.imagebody > p{
+    margin-top: 3rem;
+}
+
+.easteregg{
+    background-color: var(--gold);
+    height: 6vh;
+    width: 6vh;
+    margin: 1rem;
+    margin-left: 90vw;
+    border-radius: 80% 15% 55% 50% / 55% 15% 80% 50%;
+    border: 3px solid #1c446b;
+    transform: rotate(-45deg);
+}
+
+.boxcontainer{
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagebox{
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 20vw;
+    margin: 2rem;
+    /*padding: 3rem*/;
+    /* background-color: antiquewhite; */
+}
+
+.hover-imagebox{
+    display: none;
+}
+
+.imagebox:hover{
+    background-color: antiquewhite;
+}
+
+.hover-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.imagebox:hover .hover-image{
+    display: none;
+}
+
+.imagebox:hover .hover-imagebox{
+    display: block;
+    background-color: antiquewhite;
+}
+
+.imagewrapper{
+    max-height: 45vh;
+    width: auto;
+}
+
+.painterpage{
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+.aboutpainter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--infobackcolor);
+}
+
+.aboutpainting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    padding-bottom: 1rem;
+    background-color: var(--infobackcolor);
+    max-height: 55vh;
+}
+
+.painting{
+    object-fit: contain;
+    max-height: 20rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.painterinfo{
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.painterinfo > ul{
+    list-style-type: none;
+}
+
+.painterinfo > ul > li{
+    margin-top: 1rem;
+}
+
+.painterinfo > h3{
+    font-size: 2rem;
+}
+
+.paintinginfo{
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.paintinginfo > ul{
+    list-style-type: none;
+}
+
+.paintinginfo > ul > li{
+    margin-top: 1rem;
+}
+
+.paintinginfo > h3{
+    font-size: 2rem;
+}
+
+.userinput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.userinput > form{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.userinput > * {
+    margin-top: .8rem;
+}
+
+textarea{
+    width: auto;
+}
+
+.inputbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userimage{
+    width: 25vw;
+    height: 50vh;
+    background-color: #f2edfb;
+    margin: 0 auto;
+}
+
+.poemdisplay{
+    max-width: 45vw;
+    text-align: justify;
+    line-height: 2.1rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 2.1rem;
+}
